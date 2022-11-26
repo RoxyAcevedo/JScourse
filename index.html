@@ -7,9 +7,44 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Tienda Online</h1>
+        <input type="search" id="buscarProducto">
+        <button id="cesta-carrito">
+            <i class="fas fa-shopping-cart" aria-hidden="true">
+            <span id="contador-carrito">0</span>
+            </i>
+        </button>
+    </header>
 
-    <script src="simulador.js"></script>
-    <script src="producto.js"></script>
+    <main id="producto-contenedor"> </main>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="btn-cerrar-carrito">
+                <i class="fas fa-times-circle" aria-hidden="true"> </i>
+            </button>
+            <div id="carrito-contenedor"> </div>
+            <p class="precioProducto">"Precio total: $"
+                <span id="precioTotal"> </span>
+            </p>
+        </div>
+    </div>
+
+    <script src="./src/stock.js"></script>
+    <script src="./src/modal.js"></script>
+    <script src="./src/storage.js"></script>
+    <script src="./src/actualizarCarrito.js"></script>
+    <script src="./src/accionesCarrito.js"></script>
+    <script src="./src/buscarProducto.js"></script>
+    <script src="./src/obtenerProducto.js"></script>
+    <script src="./src/app.js"></script>
+    <script src="./src/index.js"></script>
+
+
+
+    <script src=simulador.js ></script>
+    <script src=producto.js></script>
 </body>
 </html>
